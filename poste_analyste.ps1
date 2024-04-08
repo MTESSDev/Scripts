@@ -16,7 +16,7 @@ Write-Host "-----Installation de dotnet------ Installation..."
 &powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://dot.net/v1/dotnet-install.ps1'))) -InstallDir ${Env:USERPROFILE}\dotnet -Channel 8.0.1xx"
 Write-Host "-----Installation de dotnet------ Fait." 
 
-
 [Environment]::SetEnvironmentVariable("PATH", "${Env:USERPROFILE}\dotnet;${Env:PATH}", "User")
+[Environment]::SetEnvironmentVariable("PATH", "${Env:USERPROFILE}\AppData\Local\Programs\Git\cmd;${Env:PATH}", "User")
 
 Write-Host "-----Termine ! Bons tests !" 
