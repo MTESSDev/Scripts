@@ -19,4 +19,6 @@ Write-Host "-----Installation de dotnet------ Fait."
 [Environment]::SetEnvironmentVariable("PATH", "${Env:USERPROFILE}\dotnet;${Env:PATH}", "User")
 [Environment]::SetEnvironmentVariable("PATH", "${Env:USERPROFILE}\AppData\Local\Programs\Git\cmd;${Env:PATH}", "User")
 
+git config --global http.sslverify false
+
 Write-Host "-----Termine ! Bons tests !" 
