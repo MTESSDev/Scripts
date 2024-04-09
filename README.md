@@ -1,2 +1,2 @@
 # Scripts
-Script divers d'installation
+Scripts divers d'installation
